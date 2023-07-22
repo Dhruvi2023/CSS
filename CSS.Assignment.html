@@ -1,0 +1,315 @@
+                                        MODULE 4: CSS AND CSS 3
+
+
+
+
+QUE 1: What are the benifits of using CSS?
+ANS  :       In this article, we will know about the benefits of CSS Sprites, along with understanding their implementation through the examples.
+
+The CSS Sprites are a collection or set of image files combined into a single file that an HTML document can access. These images are then called into use within the HTML code to be shown on the website. A web page working with many images can take a huge amount of time to load and generate multiple server requests. The primary benefit of utilizing image sprite is to reduce the number of HTTP requests that make the website’s heap time quicker. The images additionally load quicker making switching easy from one image then onto the next.
+
+Example of CSS Sprites helps in Web Development:
+
+Usually while designing web pages, the images are utilized as individual documents. Thus, when a client opens a webpage, the program needs to make an HTTP request for every one of these documents, download them independently and display them. This prompts higher page load times as a specific web page can have countless more modest pictures like buttons, symbols, logos. CSS Image sprites help web developers to join and mix these frequently used small images into one big image. The browser then has to work with only one file which is then displayed to required sections.
+
+
+Working with CSS Sprites: With individual images, the developer can simply use HTML <img> tag and style it in CSS as required. But while working with CSS Sprites, a developer has to do 2 specific things:
+
+Creation of Sprite Sheet: For using CSS sprites, we have to first create the sprite sheet by merging all the desired elements like buttons, images, icons, etc. in a grid-like pattern. This can be done using any image editing software like Photoshop or Gimp. There are also many other online tools available that help to make a sprite sheet. 
+Accessing a particular element from the grid using the background-position property: We have to use CSS attributes to access different parts of the sheet:
+width: Width of the sprite image.
+height: Height of the sprite image.
+background: Creates a reference to the sprite sheet.
+Background-position: Offset values (in pixels) for required parts.
+Please refer to the CSS Image Sprites article for further detailed descriptions. 
+
+Here, we will understand the usage of CSS Sprites through the examples. There are several areas where the CSS Sprite is beneficial to use, some of them are discussed below:
+
+Obtaining the image from the Sprite sheet:
+
+Approach: We have created a sprite sheet with the dimensions of 200px*100px. When we share sprite sheets, we share all images under one. So for reobtaining our images back, we set our sprite sheet as the background and with known background-position which are known while creating the sprite sheet. Hence, in this way, we can obtain the desired images back from spite sheets. Consider a group of images that are going requested by the user.
+
+
+
+QUE 2: What are the disadvantage of CSS?
+ANS  :                                   ~ DISADVANTAFE OF CSS ~  
+       ~  CSS, CSS 1 up to CSS3, result in creating of confusion among  web browsers.
+       ~  With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.
+       ~  There exists a scarcity of security.
+       ~  After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the browsers.
+       ~  The programming language world is complicated for non-developers and beginners. Different levels of CSS i.e. CSS, CSS 2, CSS 3 are often quite confusing.
+       ~  Browser compatibility (some styles sheet are supported and some are not).
+       ~  CSS works differently on different browsers. IE and Opera supports CSS as different logic.
+       ~  There might be cross-browser issues while using CSS.
+       ~  There are multiple levels which creates confusion for non-developers and beginners.
+
+
+
+QUE 3: What is the difference between CSS2 and CSS3?
+ANS  :  CSS: CSS stands for Cascading Style Sheet. Its main objective is to provide styling and fashion to the web page. CSS provides color, layout, background, font, and border properties. CSS features allow better content accessibility, enhanced flexibility, and control, as well as the specification of the characteristics of presentation.
+
+CSS3: CSS3 stands for Cascading Style Sheet level 3, which is the advanced version of CSS. It is used for structuring, styling, and formatting web pages. Several new features have been added to CSS3 and it is supported by all modern web browsers. The most important feature of CSS3 is the splitting of CSS standards into separate modules that are simpler to learn and use.
+
+                                    Difference between CSS and CSS3:
+
+S.No.	         CSS                                                                	CSS3
+1	CSS is capable of positioning texts and objects. 	On the other hand, CSS3 is capable of making the web page more attractive and takes less time to create.                                    CSS3 is backward compatible with CSS.
+2	Responsive designing is not supported in CSS	    CSS3 is the latest version, hence it supports responsive design.
+3	CSS cannot be split into modules.	                Whereas CSS3 can be breakdown into modules.
+4	Using CSS, we cannot build 3D 
+5	CSS is very slow as compared to CSS3	            Whereas CSS3 is faster than CSS.
+6	In CSS we have set of standard colors 
+and it uses basic color schemes only.	                Whereas CSS3 has a good collection of HSL RGBA, HSLA, and gradient colors.
+7	In CSS we can only use single text blocks.	        But in CSS3 we can use multi-column text blocks
+8	CSS does not support media queries.	                But CSS3 supports media queries
+9	CSS codes are not supported by
+ all types of modern browsers.	                        Being the latest version, CSS3 codes are supported by all modern browsers.
+10	In CSS, designers have to manually 
+develop rounded gradients and corners.	                But CSS3 provides advanced codes for setting rounded gradients and corners
+11	CSS was developed in 1996.                      	CSS3 is the latest version of CSS and was released in 2005.
+12	CSS is memory intensive.	                        CSS3 memory consumption is low as compared to CSS.
+
+
+
+QUE 4: Name a few CSS style components?
+ANS  :   A few CSS style components include property, value, selector.
+Styled components are becoming very popular these days. The majority of projects are built using react.js by using the library. Styled components have made working using CSS very easy and fun, even while using JavaScript.
+
+However, everything requires practice, especially when you want to become a master in it. Let's go and brief some of the fundamentals of styled-components in CSS.
+
+1.   Workspace and HTML
+The first step is that we need to set up our workspace. Keeping aside the styled-components, we are required to use two additional libraries. We will use CDN to obtain both of them as well as the library for styled-components. These libraries are, namely, React.js and React-DOM for getting both and the Babel transpiler.
+
+Secondly, we must prepare the HTML document where we will render our react to JS components. It will be a very quick and simple procedure since our code will be running in JavaScript or React.JS. All else required is one div element. We will be using this element as a placeholder for rendering our react components.
+
+2.   JavaScript, React.js, and Styled components
+We can now finally start playing with styled-components. As mentioned in the beginning, there will be starting with the basic stuff. When there is nothing very difficult about styled-components or CSS, let’s start with the basics and create a few typography styles for headings and body text by utilizing font weight and font size.
+
+3.   Bringing in more modularity
+As we have seen in the example above, working with science components will be like working with Manila CSS. A bit of time for remembering a different way for defining styles may be required, such as const.
+
+Whenever our code is concise, like this case, nevertheless, we could write our code in a better and more modular way if we define a new concept and set its front way to bold and then utilize each heading style variable. If something happens, we can decide what to change the font-weight, and we need to change it in just one place.
+
+This change will be very easy and fast and will require to import one more additional method from the styles component library. This method is defined and exported for a styled component library that has CSS. We will not change the second line by using styled-components import and include the CSS method. Always remember that CSS is written in lowercase.
+
+4.   Extending styled-components
+We now know how to create new components by using specific styles through variables using styled-components. We want to have one variable with particular types and use it for both members and extend techniques of other features.
+
+All we need to do is define a new variable for some component. Then we will be adding some styles to make this button look better. After that, we will create another variable or another control that will inherit the first one's styles while having its own.
+
+One more thing is that we are not required to import any additional method from the styled-components library as we did in CSS. We are required to import the style components, and utilizations extends as we want.
+
+
+
+QUE 5: What do you understand by CSS opacity?
+ANS  :            The opacity in CSS is the property of an element that describes the transparency of the element. It is the opposite of transparency & represents the degree to which the content will be hidden behind an element.
+
+We can apply the opacity with different styling properties to the elements. A few of them are discussed below:
+
+Image Opacity: The opacity property is used in the image to describe the transparency of the image. The value of opacity lies between 0.0 to 1.0 where a low value represents high transparency and a high value represents low transparency. The percentage of opacity is calculated as Opacity% = Opacity * 100.
+
+
+
+QUE 6: How can the background color of an element be changed?
+ANS  :     The background-color property in CSS is used to specify the background color of an element. The background covers the total size of the element with padding and border but excludes margin. It makes the text so easy to read for the user. 
+
+           color: It defines the background color value or color codes. For example: A color name can be given as: “green” or HEX value as “#5570f0” or RGB value as “rgb(25, 255, 2)”.
+
+           You can change the background color of an HTML element using the background-color CSS property and giving it a value of a color.
+
+
+
+QUE 7: How can image repetition of the backup be controlled?
+ANS  :      In this article, we will see how an image repetition of the backup is controlled in CSS. This task can be achieved by using the background-repeat property that will help us to control the repetition of the image.
+
+The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.
+
+
+
+QUE 8: What is use of the background-position property?
+ANS  :         The background-position property in CSS is mainly used to sets the initial position for the background image ie., it is used to set an image at a certain position. The position that is relative to the positioning layer, can be set by using the background-origin property.
+
+Syntax:
+      background-position: value;
+
+Note: The background-image is placed default to the top-left corner of an element with a repetition on both horizontally & vertically.
+
+background-position: left top: This property is used to set the image at the left top.
+background-position: left center :This property is used to set the image at the left center.
+background-position: left bottom; This property is used to set the image at the left bottom.
+background-position: center top; This property is used to set the image at the center top position.
+background-position: center center; This property is used to set the image at the center center position.
+background-position: center bottom; This property is used to set the image at the center bottom position.
+background-position: right top; This property is used to set the image at the right top position.
+background-position: right center; This property is used to set the image at the right center position.
+background-position: right bottom; This property is used to set the image at the right bottom position.
+background-position: 25% 75%: This property is used to set the image at 25% from the left and 75% from the top.
+Note: For x%y% notation, here x% denotes the horizontal position & y% denotes the vertical position with respect to the initial position i.e, left top.
+background-position: 30px 80px;: This property is used to set the image at the 30px from left and 80px from top.
+
+
+
+QUE 9: Which property controls the image scroll in the background?
+ANS  :             In this article, we will discuss the property that is used to control the scrolling of an image in the background. The background-attachment property in CSS is used to specify the kind of attachment of the background image with respect to its container. It can be set to scroll or make it remain fixed. It can be applied to all HTML elements.
+
+Syntax:
+      background-attachment: scroll|fixed|local|initial|inherit;
+
+
+
+QUE 10: Why should background and color be used as separate properties?
+ANS   :   The background-color property in CSS is used to specify the background color of an element. The background covers the total size of the element with padding and border but excludes margin. It makes the text so easy to read for the user. 
+
+Syntax:
+
+element {
+    background-color property
+}
+Default value : It has a default value i.e. transparent.
+
+   
+
+QUE 11: How to center block elements using CSS1? 
+ANS   :     In this article, we will see how to make block-level elements to the center using CSS. 
+
+Approach: There are two steps to center a block-level element –
+
+Step 1: Define the external width – We need to define the external width. Block-level elements have the default width of 100% of the webpage, so for centering the block element, we need space around it. So for generating the space, we are giving it a width.
+
+Step 2: Set the left-margin and the right-margin of the element to auto – Since we produced a remaining space by providing external width so now we need to align that space properly that’s why we should use margin property. Margin is a property that tells how to align a remaining space. So for centering the element you must set left-margin to auto and right-margin to auto.
+
+Syntax:
+
+element {
+    width:200px;
+    margin: auto;
+}
+
+
+
+QUE 12: How to maintain the CSS specification?
+ANS   :     Keep it consistent. Use the same formatting, naming, and indentation rules throughout your project.
+
+            Comment your CSS. Explain the purpose and function of your code with clear and concise comments.
+
+            Create logical sections in your stylesheet. Group related rules together and separate them with line breaks or comments.
+
+            Avoid overly-specific selectors. Use simple and reusable selectors that target the elements you want to style.
+
+            Break large stylesheets into multiple smaller ones. Use @import or other methods to modularize your CSS and make it easier to manage.
+
+
+
+QUE 13: What are the ways to integrate CSS as a web page?
+ANS   :        There are three ways of inserting a style sheet:
+
+                           External CSS
+                           Internal CSS
+                           Inline CSS
+                           External CSS
+With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a element in the section
+External - by using a element to link to an external CSS file
+Import - by using an @import rule inside a element or a CSS file
+Embed - by using a element in the section
+
+
+
+QUE 14: What is embedded style sheets?
+ANS   :          CSS stylesheets are used to describe the presentation of a document written in HTML. It provides color, layout, background, font, and border properties while also allowing better content accessibility, enhanced flexibility, and control, as well as the specification of the characteristics of presentation. CSS stylesheets can be applied to an HTML document in 3 ways – inline styles, embedded stylesheet, and external stylesheet.
+
+Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the <style></style> tags containing the CSS properties in the head of your document. Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. However, if the styles need to be applied across multiple documents, you should link to an external style sheet instead of using individual embedded style sheets. Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to address one HTML element at a time. 
+
+Syntax: The CSS syntax for embedded style sheets is exactly the same as other CSS code, apart from the fact that it is now wrapped within the <style></style> tags. The <style> tag takes the ‘type’ attribute that defines the type of style sheet being used (ie. text/CSS). 
+
+
+
+QUE 15: What are the external style sheets?
+ANS   :    An external style sheet is a separate CSS file linked to an HTML web page123. It comes with a .css filename extension1. All the styles that need to be used on a website can be declared in the external style sheet12. This means you only need to set the styles for each element once2. External style sheets are an important tool from the webmaster’s perspective1.
+
+Cascading Style Sheet (CSS) is used to set the style in web pages that contain HTML elements. It sets the background color, font-size, font-family, color, … etc. properties of elements on a web page.
+
+There are three types of CSS which are given below:
+
+Inline CSS
+Internal or Embedded CSS
+External CSS
+Inline CSS: Inline CSS contains the CSS property in the body section attached to the element is known as inline CSS. This kind of style is specified within an HTML tag using the style attribute.
+
+Example: This example shows the application of inline-css.
+
+
+
+QUE 16: What are the advantages and disadvantages of using external style sheets?
+ANS   :  The advantages of External Style Sheets are:
+
+- Using them, the styles of multiple documents can be controlled from one file.
+- Classes can be created for use on multiple HTML element types in many documents.
+- In complex situations, selector and grouping methods can be used to apply styles.
+
+        The disadvantages of External Style Sheets are:
+
+- In order to import style information for each document, an extra download is needed.
+- Until the external style sheet is loaded, it may not be possible to render the document.
+- For small number of style definitions, it is not viable.
+
+
+
+QUE 17: What is the meaning of the CSS selector?
+ANS   :       CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+This page will explain the most basic CSS selectors.
+
+The CSS element Selector
+The element selector selects HTML elements based on the element name.
+
+                 The CSS class Selector
+The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+
+
+QUE 18: What are the media types allowed by CSS?
+ANS   :     ne of the most important features of style sheets is that they specify how a document is to be presented on different media: on the screen, on paper, with a speech synthesizer, with a braille device, etc.
+
+We have currently two ways to specify media dependencies for style sheets −
+
+Specify the target medium from a style sheet with the @media or @import at-rules.
+
+Specify the target medium within the document language.
+
+The @media rule
+An @media rule specifies the target media types (separated by commas) of a set of rules.
+
+Media Types allow you to specify how documents will be presented in different media. The document can be displayed differently on the screen, on the paper,etc. 
+
+Media Types
+Some CSS properties are only designed for a certain media. For example the "voice-family" property is designed for user agents. Some other properties can be used for different media types. For example, the "font-size" property can be used for both screen and print media, but perhaps with different values. A document usually needs a larger font-size on a screen than on paper, and sans-serif fonts are easier to read on the screen, while serif fonts are easier to read on paper.
+
+The @media Rule
+The @media rule allows different style rules for different media in the same style sheet.
+
+The style in the example below tells the browser to display a 14 pixels Verdana font on the screen. But if the page is printed, it will be in a 10 pixels Times font. Notice that the font-weight is set to bold, both on screen and on paper:
+
+
+
+QUE 19: What is the rule set?
+ANS   :     A CSS ruleset is various affirmations to various pieces or elements of the document. The objective is to apply a bunch of properties for certain distinct qualities to a solitary, or a particular arrangement of components in the connected HTML page. 
+
+CSS ruleset
+
+The “.” in the beginning indicates that the rule created will be a class, also “container” indicates the name of the selector. Similarly “first-child” indicates the pseudo-class, and elements inside curly brackets are elements of a declaration block, which contains some CSS properties and their corresponding values. The CSS ruleset will be applied when the selector name is called on the main HTML page. 
+
+CSS Ruleset is the main building block of the CSS stylesheet.
